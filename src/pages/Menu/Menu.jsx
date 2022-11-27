@@ -5,12 +5,13 @@ function Menu() {
   return (
     <div>
       Menu
-      <ProductItem/>
-      <ProductItem/>
-      <ProductItem/>
-      <ProductItem/>
-      <ProductItem/>
+      <ProductItem />
+      <ProductItem />
+      <ProductItem />
+      <ProductItem />
+      <ProductItem />
     </div>
+
   );
 }
 
