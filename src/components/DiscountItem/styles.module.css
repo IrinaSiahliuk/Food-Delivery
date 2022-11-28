@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
     padding: 0;
@@ -10,13 +10,14 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-
     margin-bottom: 31px;
 }
 
 .item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 350px;
-    height: 391px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
@@ -26,39 +27,41 @@
 .img {
     width: 350px;
     height: 138px;
+    margin-bottom: 20px;
 }
 
 .info {
-    padding: 20px 13px 7px 20px;
+    padding: 0px 7px 0px 20px;
 }
 
 .title {
-    font-family: 'Inter', sans-serif;
+    padding: 0 7px 7px 20px;
+  
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
-
     color: #0E0C0D;
-
-    margin-bottom: 7px;
 }
 
 .text {
-    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 20px;
-
     color: #686466;
-
-    margin-bottom: 20px;
 }
 
 .button {
+    width: 159px;
     padding: 8px 33px;
     border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 
     background: #FF2E65;
     color: #FFFFFF;
