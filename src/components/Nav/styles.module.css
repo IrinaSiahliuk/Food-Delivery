@@ -1,0 +1,52 @@
+.navWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navList{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    list-style: none;
+    color: #0E0C0D;
+}
+
+.navListItem{
+    cursor: pointer;
+}
+
+.navBtn{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.enterBtn{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    color:#696F7A;
+    cursor: pointer;
+}
+
+.basketBtn{
+    padding: 7px 25px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: #FF2E65;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.basketBtn:hover{
+    opacity: 0.8;
+}
