@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@800&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.item_wrapper {
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  height: 466px;
+  width: 256px;
+}
+
+.pizza_img {
+  height: 253px;
+  width: 253px;
+}
+
+.title {
+  text-align: center;
+  line-height: 28px;
+}
+
+.text_wrapper {
+  margin-top: 18px;
+}
+
+.text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+
+  color: #686466;
+}
+
+.buy_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 23px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.basket_btn {
+  height: 36px;
+  width: 126px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #ff2e65;
+}
