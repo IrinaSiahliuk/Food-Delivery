@@ -4,10 +4,10 @@ import MenuCSS from './Menu.module.css'
 
 import ProductItem from "../../components/ProductItem/ProductItem";
 
-import FourChease from "../../components/ProductItem/Assets/PizzasImg/four-chease.png";
-import FourSeasonsPizza from "../../components/ProductItem/Assets/PizzasImg/four-seasons.png";
-import KetchupPizza from "../../components/ProductItem/Assets/PizzasImg/ketchup.png";
-import MushroomPizza from "../../components/ProductItem/Assets/PizzasImg/mushroom.png";
+import FourChease from "../../assets/PizzasImg/four-chease.png";
+import FourSeasonsPizza from "../../assets/PizzasImg//four-seasons.png";
+import KetchupPizza from "../../assets/PizzasImg//ketchup.png";
+import MushroomPizza from "../../assets/PizzasImg//mushroom.png";
 
 function Menu() {
   return (
