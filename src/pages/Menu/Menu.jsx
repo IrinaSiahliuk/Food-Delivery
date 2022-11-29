@@ -1,6 +1,6 @@
 import React from "react";
 
-import MenuCSS from './Menu.module.css'
+import styles from './styles.module.css'
 
 import ProductItem from "../../components/ProductItem/ProductItem";
 
@@ -11,7 +11,7 @@ import MushroomPizza from "../../assets/PizzasImg//mushroom.png";
 
 function Menu() {
   return (
-    <div className={MenuCSS.menu_wrapper}>
+    <div className={styles.menu_wrapper}>
       Menu
       <ProductItem
         image={FourChease}
