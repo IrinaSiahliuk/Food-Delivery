@@ -1,8 +1,8 @@
 import React from 'react';
 
 import styles from './styles.module.css';
-import Logo from '../../assets/Header/Logo.svg';
-import Star from '../../assets/Header/Star.png';
+import Logo from '../../assets/HeaderImg/Logo.svg';
+import Star from '../../assets/HeaderImg/Star.png';
 import Nav from '../Nav/Nav';
 
 

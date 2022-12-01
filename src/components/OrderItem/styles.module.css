@@ -1,0 +1,94 @@
+.wrapper {
+    width: 900px;
+    height: 128px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.product::before {
+    content: "";
+    width: 890px;
+    height: 1px;
+    position: absolute;
+    top: 1%;
+
+    background: #ECECF1;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.product {
+    display: flex;
+}
+
+.img {
+    width: 71px;
+    height: 71px;
+    margin-right: 25px;
+}
+
+.text {
+    width: 500px;
+}
+
+.title {
+    margin-bottom: 9px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 17px;
+    color: #0E0C0D;
+}
+
+.description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: #686466;
+}
+
+.price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FF2E65;
+}
+
+.order {
+    display: flex;
+    gap: 37px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 93px;
+    height: 32px;
+
+    background: #F3F3F7;
+    border-radius: 8px;
+    
+}
+
+.button{
+    background: #F3F3F7;
+    border: 0;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: #FF2E65;
+    cursor: pointer;
+}

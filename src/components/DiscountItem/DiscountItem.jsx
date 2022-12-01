@@ -3,6 +3,7 @@ import React from "react";
 import style from "./styles.module.css";
 
 
+
 function DiscountItem({ image, title, description }) {
 
     return (
@@ -17,8 +18,8 @@ function DiscountItem({ image, title, description }) {
                 </div>
                 <button className={style.button}>Посмотреть</button>
             </div>
-
         </div>
+        
     )
 }
 
