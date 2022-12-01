@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import Menu from './pages/Menu/Menu';
 import Discounts from './pages/Discounts/Discounts';
 import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
+import SignUp from './pages/SignUp/SignUp';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/menu' element={<Menu />} />
         <Route path='/discounts' element={<Discounts />} />
         <Route path='/shoppingcart' element={<ShoppingCart />} />
+        <Route path='/sign-up' element={<SignUp />} />
       </Routes>
     </div>
   );
