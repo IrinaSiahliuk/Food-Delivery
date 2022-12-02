@@ -1,16 +1,12 @@
 import {React, useState} from "react";
-
-
-import style from "components/OrderItem/styles.module.css";
-
 import { AiOutlineMinus } from 'react-icons/ai';
 import { AiOutlinePlus } from 'react-icons/ai';
 import { BsBucket } from 'react-icons/bs';
 
+import style from "components/OrderItem/styles.module.css";
+
 function OrderItem({ image, title, description, price}){
-
     const [counter, setCounter] = useState (0);
-
 
     return(
         <div className={style.wrapper}>

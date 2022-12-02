@@ -1,16 +1,18 @@
 import React from 'react';
 
-import styles from 'components/Footer/styles.module.css';
 import Logo from 'assets/FooterImg/Logo.svg';
 import Visa from 'assets/FooterImg/Visa.svg';
 import PayPal from 'assets/FooterImg/PayPal.svg';
 import MasterCard from 'assets/FooterImg/MasterCard.svg';
+
 import Viber from 'assets/FooterImg/Viber.png';
 import Skype from 'assets/FooterImg/Skype.png';
 import Messenger from 'assets/FooterImg/Messenger.png';
 import Telegram from 'assets/FooterImg/Telegram.png';
 import Facebook from 'assets/FooterImg/Facebook.png';
 import Vk from 'assets/FooterImg/Vk.png';
+
+import styles from 'components/Footer/styles.module.css';
 
 function Footer() {
     return (

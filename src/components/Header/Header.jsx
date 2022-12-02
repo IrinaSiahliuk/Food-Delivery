@@ -1,9 +1,11 @@
 import React from 'react';
 
-import styles from 'components/Header/styles.module.css';
+import {Nav} from 'components/Nav';
+
 import Logo from 'assets/HeaderImg/Logo.svg';
 import Star from 'assets/HeaderImg/Star.png';
-import Nav from 'components/Nav/Nav';
+
+import styles from 'components/Header/styles.module.css';
 
 
 function Header() {

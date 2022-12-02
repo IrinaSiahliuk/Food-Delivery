@@ -1,12 +1,13 @@
 import React from "react";
 
-import ProductItem from "components/ProductItem/ProductItem";
-import styles from 'pages/Menu/styles.module.css'
+import {ProductItem} from "components";
 
 import FourChease from "assets/PizzasImg/four-chease.png";
 import FourSeasonsPizza from "assets/PizzasImg//four-seasons.png";
 import KetchupPizza from "assets/PizzasImg//ketchup.png";
 import MushroomPizza from "assets/PizzasImg//mushroom.png";
+
+import styles from 'pages/Menu/styles.module.css';
 
 function Menu() {
   return (
