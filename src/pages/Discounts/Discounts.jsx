@@ -1,13 +1,12 @@
 import React from "react";
 
-import DiscountItem from '../../components/DiscountItem/DiscountItem';
+import DiscountItem from 'components/DiscountItem/DiscountItem';
+import style from 'components/DiscountItem/styles.module.css';
 
-import style from '../../components/DiscountItem/styles.module.css';
-
-import Order from '../../assets/DiscountsImg/Order.png';
-import GamePresents from '../../assets/DiscountsImg/GamePresents.png';
-import HawaiianPizza from '../../assets/DiscountsImg/HawaiianPizza.png';
-import TwoPizzas from '../../assets/DiscountsImg/TwoPizzas.png';
+import Order from 'assets/DiscountsImg/Order.png';
+import GamePresents from 'assets/DiscountsImg/GamePresents.png';
+import HawaiianPizza from 'assets/DiscountsImg/HawaiianPizza.png';
+import TwoPizzas from 'assets/DiscountsImg/TwoPizzas.png';
 
 function Discounts() {
 

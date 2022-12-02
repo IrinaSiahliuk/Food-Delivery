@@ -1,11 +1,8 @@
 import React from "react";
 
-import style from "./styles.module.css";
-
+import style from "components/SauceItem/SauceItem";
 
 function SauceItem({ image, title, price }) {
-
-
     return (
         <div className={style.wrapper}>
             <div className={style.product}>

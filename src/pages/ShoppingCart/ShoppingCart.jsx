@@ -1,26 +1,23 @@
 import React from "react";
-import OrderItem from "../../components/OrderItem/OrderItem";
-
-import style from "./styles.module.css"
-
-
-import FourChease from "../../assets/PizzasImg/four-chease.png";
-import FourSeasonsPizza from "../../assets/PizzasImg//four-seasons.png";
-import RelatedItem from "../../components/RelatedItem/RelatedItem";
-
 
 import { MdOutlineArrowBackIosNew } from 'react-icons/md';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 
-import BarbecueSauce from "../../assets/SaucesImg/BarbecueSauce.png";
-import CondensedMilk from "../../assets/SaucesImg/CondensedMilk.png";
-import RanchSauce from "../../assets/SaucesImg/RanchSauce.png";
-import CheeseSauce from "../../assets/SaucesImg/CheeseSauce.png";
-import RaspberryJam from "../../assets/SaucesImg/RaspberryJam.png";
+import OrderItem from "components/OrderItem/OrderItem";
+import RelatedItem from "components/RelatedItem/RelatedItem";
 
-import SauceItem from "../../components/SauceItem/SauceItem";
-import PromoCode from "../../components/PromoCode/PromoCode";
-import SumOrder from "../../components/SumOrder/SumOrder";
+import style from "pages/ShoppingCart/styles.module.css"
+
+import FourChease from "assets/PizzasImg/four-chease.png";
+import FourSeasonsPizza from "assets/PizzasImg//four-seasons.png";
+import BarbecueSauce from "assets/SaucesImg/BarbecueSauce.png";
+import CondensedMilk from "assets/SaucesImg/CondensedMilk.png";
+import RanchSauce from "assets/SaucesImg/RanchSauce.png";
+import CheeseSauce from "assets/SaucesImg/CheeseSauce.png";
+import RaspberryJam from "assets/SaucesImg/RaspberryJam.png";
+import SauceItem from "components/SauceItem/SauceItem";
+import PromoCode from "components/PromoCode/PromoCode";
+import SumOrder from "components/SumOrder/SumOrder";
 
 function ShoppingCart() {
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "./styles.module.css";
+import style from "components/PromoCode/styles.module.css";
 
 function PromoCode(){
 

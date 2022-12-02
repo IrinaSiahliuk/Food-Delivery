@@ -1,10 +1,9 @@
 import { useField } from "formik";
 
-import Style from "../../components/RegForm/styles.module.css";
+import Style from "components/RegForm/styles.module.css";
 
 const CustomInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
-
   return (
     <>
       <label>{label}</label>

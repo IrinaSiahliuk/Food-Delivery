@@ -1,7 +1,7 @@
 import {React, useState} from "react";
 
 
-import style from "./styles.module.css";
+import style from "components/OrderItem/styles.module.css";
 
 import { AiOutlineMinus } from 'react-icons/ai';
 import { AiOutlinePlus } from 'react-icons/ai';

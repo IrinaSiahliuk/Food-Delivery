@@ -1,11 +1,8 @@
 import React from "react";
 
-import style from "./styles.module.css";
-
-
+import style from "components/RelatedItem/styles.module.css";
 
 function RelatedItem({ image, description, price }) {
-
     return (
         <div className={style.wrapper}>
             <div className={style.product}>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './styles.module.css';
+import styles from 'components/Nav/styles.module.css';
 
 function Nav({basketCount}) {
     return (

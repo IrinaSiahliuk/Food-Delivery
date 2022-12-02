@@ -1,9 +1,10 @@
 import { Form, Formik } from "formik";
-import { validationCheck } from "./schemas/validation";
-import CustomInput from "./CustomInput";
-import Style from "./styles.module.css";
-import Logo from "../../assets/HeaderImg/Logo.svg";
-import styles from "../../components/Header/styles.module.css";
+import { validationCheck } from "components/RegForm/schemas/validation";
+
+import Style from "components/RegForm/styles.module.css";
+import Logo from "assets/HeaderImg/Logo.svg";
+import styles from "components/Header/styles.module.css";
+import CustomInput from "components/RegForm/CustomInput";
 
 const onSubmit = async (values, actions) => {
   console.log(actions);

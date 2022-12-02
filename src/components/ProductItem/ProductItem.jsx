@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./styles.module.css";
+import styles from "components/ProductItem/styles.module.css";
 
 function ProductItem({ image, title, text, price }) {
   return (
