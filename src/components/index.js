@@ -9,3 +9,7 @@ export {RegForm} from './RegForm';
 export {RelatedItem} from './RelatedItem';
 export {SauceItem} from './SauceItem';
 export {SumOrder} from './SumOrder';
+export {OrderForDelivery} from './OrderForDelivery';
+export {DeliveryInfo} from './DeliveryInfo';
+export {Payment} from './Payment';
+export {OrderComposition} from './OrderComposition';

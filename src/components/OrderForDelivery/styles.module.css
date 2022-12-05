@@ -1,0 +1,51 @@
+.wrapper{
+    display: flex;
+    gap: 45px;
+}
+
+.promoBlock{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.promoTitle{
+    margin-bottom: 27px;
+
+    font-size: 22px;
+    font-weight: 600;
+    color: #FF2E65;
+}
+
+.buttonWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.backBtn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(35, 31, 32, 0.8);
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.arrangeBtn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 40px;
+
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff;
+    background: #FF2E65;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
