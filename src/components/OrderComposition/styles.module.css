@@ -1,0 +1,33 @@
+.orderWrapper{
+    width: 340px;
+    height:fit-content;
+    padding: 22px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.08);
+}
+
+.title{
+    margin-bottom: 23px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF2E65;
+}
+
+.sum{
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(35, 31, 32, 0.6);
+}
+
+.freeDelivery{
+    text-align: center;
+    
+    font-size: 15px;
+    font-weight: 700;
+    color: #213134;
+    opacity: 0.6;
+}

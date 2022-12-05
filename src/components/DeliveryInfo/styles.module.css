@@ -1,0 +1,61 @@
+.title{
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #FF2E65;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 730px;
+}
+
+p{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #231F20;
+    opacity: 0.7;
+}
+
+.nameInput{
+    width: 540px;
+    padding: 10px 20px;
+
+    border: 1.5px solid #E2E2E9;
+    border-radius: 7px;
+    outline: none;
+}
+
+.phoneInput, .addressInput, .timeInput{
+    width: 540px;
+    padding: 10px 20px;
+
+    background: #E3ECF5;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+.name, .phone, .address, .time{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.changeBtn{
+    position: absolute;
+    right: 2%;
+    top: 20%;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF2E65;
+    background-color: #E3ECF5;
+    border: none;
+    cursor: pointer;
+}
