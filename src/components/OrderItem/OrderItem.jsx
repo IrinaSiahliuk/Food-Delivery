@@ -1,7 +1,8 @@
 import {React, useState} from "react";
+
 import { AiOutlineMinus } from 'react-icons/ai';
 import { AiOutlinePlus } from 'react-icons/ai';
-import { BsBucket } from 'react-icons/bs';
+import { GiEmptyMetalBucketHandle } from 'react-icons/gi';
 
 import style from "components/OrderItem/styles.module.css";
 
@@ -22,11 +23,15 @@ function OrderItem({ image, title, description, price}){
             <div className={style.order}>
                 <div className={style.price}>{price} BYN</div>
                 <div className={style.buttons}>
-                    <button onClick={()=>setCounter(counter-1)} className={style.button}><AiOutlineMinus/></button>
+                    <button onClick={()=>{
+                        if(counter>0){
+                            setCounter(counter-1)
+                        }
+                    }} className={style.button}><AiOutlineMinus/></button>
                     <div className={style.counter}>{counter}</div>
                     <button onClick={()=>setCounter(counter+1)} className={style.button}><AiOutlinePlus/></button>
                 </div>
-                <div className={style.icon}><BsBucket/></div>
+                <div className={style.icon}><GiEmptyMetalBucketHandle/></div>
             </div>
         </div>
     )

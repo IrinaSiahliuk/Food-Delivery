@@ -1,0 +1,71 @@
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 230px 15px 200px;
+
+    border-bottom: 1px solid #ECECF1;;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logoTitle {
+    font-size: 40px;
+    font-family: Panton;
+    font-weight: 800;
+    line-height: 47px;
+}
+
+.logoSubtitle {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    padding: 5px 15px 5px 15px;
+    border-radius: 50%;
+    align-items: center;
+
+    border: 2px solid #FF2E65;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FF2E65;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgba(14, 12, 13, 0.8);
+    opacity: 0.6
+}
+
+.line {
+    display: inline;
+    width: 102px;
+    height: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    border-top: 2px dashed #B8C5D0;
+}
