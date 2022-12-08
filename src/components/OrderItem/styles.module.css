@@ -82,10 +82,20 @@
 
 .button{
     background: #F3F3F7;
+    align-items: center;
     border: 0;
     outline: none;
 
     cursor: pointer;
+}
+
+.counter{
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.icon{
+    font-size: 25px;
 }
 
 .icon:hover{

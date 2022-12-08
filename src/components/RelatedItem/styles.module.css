@@ -1,6 +1,5 @@
 .wrapper {
     display: flex;
-    position: relative;
     width: 255px;
     height: 99px;
     align-items: center;
@@ -8,6 +7,14 @@
     background: #FFFFFF;
     border: 1.5px solid #E2E2E9;
     border-radius: 12px;
+    overflow: hidden;
+}
+
+.paggination {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
 }
 
 .product {

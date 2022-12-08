@@ -1,0 +1,133 @@
+.wrapper {
+    display: flex;
+    width: 959px;
+    height: 610px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.08);
+    border-radius: 22px;
+
+}
+
+.imgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 53px 20px 53px 53px;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+}
+
+.selectWrapper {
+    padding: 30px 0px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    width: 349px;
+    height: 28px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    color: #0E0C0D;
+}
+
+.description {
+    width: 350px;
+    height: 28px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    color: #686466;
+}
+
+.sizeBtnsWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.sizeBtn {
+    height: 34px;
+    width: 110px;
+
+    background: #F3F3F7;
+    border-radius: 8px;
+    color: #828792;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.doughBtn:hover,
+.sizeBtn:hover {
+    opacity: 0.8;
+}
+
+.doughBtnsWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.doughBtn {
+    width: 170px;
+    height: 34px;
+
+    background: #F3F3F7;
+    border-radius: 8px;
+    color: #828792;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.sauces {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.orederBtnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 59px;
+
+    background: #FF2E65;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.orderBtn {
+    width: 230px;
+    height: 28px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: #FF2E65;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.orederBtnWrapper:hover{
+    opacity: 0.8;
+}

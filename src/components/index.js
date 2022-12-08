@@ -9,3 +9,6 @@ export {RegForm} from './RegForm';
 export {RelatedItem} from './RelatedItem';
 export {SauceItem} from './SauceItem';
 export {SumOrder} from './SumOrder';
+export {OrderingStage} from './OrderingStage';
+export {PagginationButtons} from './PagginationButtons';
+export {ModalOrderForm} from './ModalOrderForm';
