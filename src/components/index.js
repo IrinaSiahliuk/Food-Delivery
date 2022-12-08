@@ -12,3 +12,7 @@ export {SumOrder} from './SumOrder';
 export {OrderingStage} from './OrderingStage';
 export {PagginationButtons} from './PagginationButtons';
 export {ModalOrderForm} from './ModalOrderForm';
+export {OrderForDelivery} from './OrderForDelivery';
+export {DeliveryInfo} from './DeliveryInfo';
+export {Payment} from './Payment';
+export {OrderComposition} from './OrderComposition';
