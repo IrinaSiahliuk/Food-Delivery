@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "components/SauceItem/SauceItem";
+import style from "components/SauceItem/styles.module.css";
 
 function SauceItem({ image, title, price }) {
     return (
