@@ -1,6 +1,4 @@
 export { DiscountItem } from "./DiscountItem";
-export { Footer } from "./Footer";
-export { Header } from "./Header";
 export { Nav } from "./Nav";
 export { OrderItem } from "./OrderItem";
 export { ProductItem } from "./ProductItem";
