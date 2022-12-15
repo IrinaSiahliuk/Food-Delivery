@@ -3,8 +3,9 @@ import { validationCheck } from "components/RegForm/schemas/validation";
 
 import Style from "components/RegForm/styles.module.css";
 import Logo from "assets/HeaderImg/Logo.svg";
-import styles from "components/Header/styles.module.css";
 import CustomInput from "components/RegForm/CustomInput";
+
+import styles from "./styles.module.css";
 
 const onSubmit = async (values, actions) => {
   console.log(actions);

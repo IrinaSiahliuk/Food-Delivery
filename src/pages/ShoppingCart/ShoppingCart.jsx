@@ -11,7 +11,6 @@ import {
   PromoCode,
   SumOrder,
   PagginationButtons,
-  Footer,
   ModalOrderForm,
 } from "components";
 
@@ -94,9 +93,6 @@ function ShoppingCart() {
           <PagginationButtons />
         </div>
 
-        <div>
-          <Footer />
-        </div>
         <ModalOrderForm
           image={FourChease}
           title="Четыре сыра"
