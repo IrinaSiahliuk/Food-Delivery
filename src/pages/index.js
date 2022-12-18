@@ -5,3 +5,4 @@ export {Menu} from './Menu';
 export {ShoppingCart} from './ShoppingCart';
 export {SignUp} from './SignUp';
 export {Delivery} from './Delivery';
+export {PersonalAccount} from './PersonalAccount';

@@ -18,6 +18,8 @@
 
 .navListItem{
     cursor: pointer;
+    text-decoration: none;
+    color: #0E0C0D;
 }
 
 .navBtn{
@@ -31,6 +33,7 @@
     font-weight: 700;
     line-height: 28px;
     color:#696F7A;
+    text-decoration: none;
     cursor: pointer;
 }
 
