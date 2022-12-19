@@ -1,0 +1,86 @@
+.wrapper{
+    padding: 40px 50px 32px;
+
+    border-radius: 20px;
+}
+
+.title{
+    margin-bottom: 40px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #FF2E65;
+}
+
+.btnWrapper{
+    display: flex;
+    gap: 15px;
+}
+
+.deliveryBtn{
+    padding: 10px 36px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: #FF2E65;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.selfDeliveryBtn{
+    padding: 10px 30px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #828792;
+    background: #F3F3F7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inputsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 700px;
+    margin: 30px 0px;
+}
+
+.streetInput, .commentInput{
+    padding: 16px 40px 10px 16px;
+    width: 550px;
+
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(211, 213, 222);
+    border-radius: 12px;
+    outline: none;
+}
+
+.input{
+    padding: 16px 40px 10px 16px;
+
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(211, 213, 222);
+    border-radius: 12px;
+    outline: none;
+}
+
+.confirmBtn{
+    padding: 14px 30px;
+
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    background: #FF2E65;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
