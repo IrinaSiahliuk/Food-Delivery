@@ -1,0 +1,156 @@
+.accountWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bonus {
+    background: #E3ECF5;
+}
+
+.bonusTitle {
+    margin: 20px 0 0 210px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #FF2E65;
+}
+
+.bonusItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    height: 338px;
+    margin: 20px 0 30px 210px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+.itemTitle {
+    width: 179px;
+    height: 44px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #686466;
+}
+
+.discounts {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FF2E65;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 0 30px 210px;
+}
+
+.userTitle {
+    margin: 20px 0 20px 0;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #FF2E65;
+}
+
+.infoWrapper {
+    margin-left: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fieldTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #231F20;
+    opacity: 0.7;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 353px;
+    height: 43px;
+
+    border: 1.5px solid #E2E2E9;
+    border-radius: 8px;
+}
+
+.input {
+    padding: 7px 43px 8px 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 28px;
+    background: #F3F3F7;
+    border: 0;
+    outline: none;
+}
+
+.button {
+    width: 133px;
+    height: 40px;
+
+    background: #F3F3F7;
+    color: #FF2E65;
+    border-radius: 0px 8px 8px 0px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.radio {
+    background: #FF2E65;
+}
+
+.subscriptions {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #231F20;
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+.backBtn {
+    width: 138px;
+    height: 52px;
+    margin-top: 30px;
+
+    background: #E3ECF5;
+    border-radius: 8px;
+    border: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #696F7A;
+    cursor: pointer;
+}

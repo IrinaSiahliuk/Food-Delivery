@@ -21,7 +21,7 @@ function OrderItem({ image, title, description, price}){
                 </div>
             </div>
             <div className={style.order}>
-                <div className={style.price}>{price} BYN</div>
+                <div className={style.price}>{price*counter} BYN</div>
                 <div className={style.buttons}>
                     <button onClick={()=>{
                         if(counter>0){

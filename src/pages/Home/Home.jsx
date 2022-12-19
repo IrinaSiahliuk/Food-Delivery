@@ -1,28 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import { Store } from "app";
-import { useEffect } from "react";
+import { Menu } from "pages/Menu";
+
+import styles from "pages/Home/styles.module.css";
 
 function Home() {
-  const [store, setStore] = useContext(Store);
-
-  console.log(store);
-
   return (
-    <div>
-      {store.counter}
-      <button
-        onClick={() => {
-          setStore((pre) => {
-            return {
-              ...pre,
-              counter: pre.counter + 1,
-            };
-          });
-        }}
-      >
-        CLICK
-      </button>
+    <div className={styles.home_wrapper}>
+      <Menu />
+      <Menu />
+      <Menu />
     </div>
   );
 }
