@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { OrderForDelivery } from 'components';
+import { DeliveryModal, OrderForDelivery } from 'components';
 
 function Delivery() {
   return (
     <div>
+        <DeliveryModal />
         <OrderForDelivery />
     </div>
   );

@@ -14,3 +14,4 @@ export { OrderComposition } from "./OrderComposition";
 export { OrderingStage } from "./OrderingStage";
 export { PagginationButtons } from "./PagginationButtons";
 export { ModalOrderForm } from "./ModalOrderForm";
+export {DeliveryModal} from './DeliveryModal';
