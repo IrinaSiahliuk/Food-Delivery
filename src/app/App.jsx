@@ -9,19 +9,18 @@ export const Store = createContext();
 
 function App() {
   const [store, setStore] = useState({
-    name: "keke",
-    counter: 0,
+    name: "Ira",
+    surname: "Ira2",
+    shoppingCart: [],
   });
 
   return (
     <React.StrictMode>
       <BrowserRouter>
         <Store.Provider value={[store, setStore]}>
-          <>
-            <Layout>
-              <Router />
-            </Layout>
-          </>
+          <Layout>
+            <Router />
+          </Layout>
         </Store.Provider>
       </BrowserRouter>
     </React.StrictMode>

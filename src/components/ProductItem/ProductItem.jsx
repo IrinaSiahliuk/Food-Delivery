@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import styles from "components/ProductItem/styles.module.css";
+import { Store } from "app";
 
-function ProductItem({ image, title, text, price }) {
+function ProductItem(props) {
+  const { image, title, text, price } = props;
+  const [store, setStore] = useContext(Store);
+
+  const onAddProduct = () => {
+    setStore((pre) => ({
+      ...pre,
+      shoppingCart: [...pre.shoppingCart, { ...props }],
+    }));
+  };
+
   return (
     <div className={styles.item_wrapper}>
       <div className={styles.img_wrapper}>
@@ -21,7 +32,9 @@ function ProductItem({ image, title, text, price }) {
 
       <div className={styles.buy_area}>
         <span className={styles.price}> от {price} ₽</span>
-        <button className={styles.basket_btn}>В корзину</button>
+        <button className={styles.basket_btn} onClick={onAddProduct}>
+          В корзину
+        </button>
       </div>
     </div>
   );

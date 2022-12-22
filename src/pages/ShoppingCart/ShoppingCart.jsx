@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
@@ -13,6 +13,7 @@ import {
   PagginationButtons,
   ModalOrderForm,
 } from "components";
+import { Store } from "app";
 
 import FourChease from "assets/PizzasImg/four-chease.png";
 import FourSeasonsPizza from "assets/PizzasImg//four-seasons.png";
@@ -22,9 +23,11 @@ import RanchSauce from "assets/SaucesImg/RanchSauce.png";
 import CheeseSauce from "assets/SaucesImg/CheeseSauce.png";
 import RaspberryJam from "assets/SaucesImg/RaspberryJam.png";
 
-import style from "pages/ShoppingCart/styles.module.css";
+import style from "./styles.module.css";
 
 function ShoppingCart() {
+  const [store] = useContext(Store);
+
   return (
     <div>
       <div className={style.stage}>
@@ -32,18 +35,18 @@ function ShoppingCart() {
       </div>
       <div className={style.mainTitle}>Корзина</div>
       <div className={style.wrapper}>
-        <OrderItem
-          image={FourChease}
-          title="Четыре сыра"
-          description="Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г"
-          price={25}
-        />
-        <OrderItem
-          image={FourSeasonsPizza}
-          title="Четыре сезона"
-          description="Грибной соус, варено-копченый карбонад (свинина), грудинка (свинина), маринованные опята, сыр фета, сыр дорблю, сыр моцарелла, базилик."
-          price={30}
-        />
+        {!store.shoppingCart.length ? (
+          <>Корзина пуста</>
+        ) : (
+          store.shoppingCart.map((item) => (
+            <OrderItem
+              image={item.image}
+              title={item.title}
+              description={item.text}
+              price={item.price}
+            />
+          ))
+        )}
         <div className={style.secondaryTitle}>Добавить к заказу?</div>
         <div className={style.carousel}>
           <button className={style.pagginationArrow}>
