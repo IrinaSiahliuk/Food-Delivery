@@ -6,4 +6,5 @@ export const ROUTES = {
   SHOPPING_CART: "/shopping-cart",
   SIGN_UP: "/sign-up",
   DELIVERY: "/delivery",
+  PERSONAL_ACCOUNT: "/personal-account",
 };

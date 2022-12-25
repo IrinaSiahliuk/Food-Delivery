@@ -8,8 +8,6 @@ function Home() {
   return (
     <div className={styles.home_wrapper}>
       <Menu />
-      <Menu />
-      <Menu />
     </div>
   );
 }

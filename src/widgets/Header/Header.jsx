@@ -25,9 +25,9 @@ function Header() {
           </div>
           <div className={styles.deliverySubtitle}>
             Время доставки
-            <div class={styles.circle}></div>
+            <div className={styles.circle}></div>
             от 31 мин
-            <div class={styles.circle}></div>
+            <div className={styles.circle}></div>
             4.8
             <img className={styles.starImg} src={Star} />
           </div>
@@ -37,7 +37,7 @@ function Header() {
           <div className={styles.number}>8 800 333-36-62</div>
         </div>
       </div>
-      <Nav basketCount={0} />
+      <Nav />
     </div>
   );
 }
