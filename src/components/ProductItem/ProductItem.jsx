@@ -10,7 +10,9 @@ function ProductItem(props) {
   const onAddProduct = () => {
     setStore((pre) => ({
       ...pre,
-      shoppingCart: [...pre.shoppingCart, { ...props }],
+      user: {
+        ...pre.user, 
+        shoppingCart: [...pre.user.shoppingCart, {...props }]}
     }));
   };
 

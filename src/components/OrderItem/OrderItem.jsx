@@ -1,13 +1,15 @@
-import {React, useState} from "react";
+import {React, useContext, useState} from "react";
 
 import { AiOutlineMinus } from 'react-icons/ai';
 import { AiOutlinePlus } from 'react-icons/ai';
 import { GiEmptyMetalBucketHandle } from 'react-icons/gi';
 
 import style from "components/OrderItem/styles.module.css";
+import { Store } from "app";
 
-function OrderItem({ image, title, description, price}){
-    const [counter, setCounter] = useState (0);
+function OrderItem({ image, title, description, price, onDelete}){
+    const [store, setStore] = useContext(Store);
+    const [counter, setCounter] = useState (1);
 
     return(
         <div className={style.wrapper}>
@@ -31,7 +33,7 @@ function OrderItem({ image, title, description, price}){
                     <div className={style.counter}>{counter}</div>
                     <button onClick={()=>setCounter(counter+1)} className={style.button}><AiOutlinePlus/></button>
                 </div>
-                <div className={style.icon}><GiEmptyMetalBucketHandle/></div>
+                <div onClick={() => onDelete(title)} className={style.icon}><GiEmptyMetalBucketHandle/></div>
             </div>
         </div>
     )

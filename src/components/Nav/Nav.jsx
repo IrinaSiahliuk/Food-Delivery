@@ -45,7 +45,7 @@ function Nav() {
         </Link>
         <Link to={ROUTES.SHOPPING_CART}>
           <button className={styles.basketBtn}>
-            Корзина | {store.shoppingCart.length}
+            Корзина | {store.user.shoppingCart.length}
           </button>
         </Link>
       </div>

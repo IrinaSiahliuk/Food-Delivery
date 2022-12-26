@@ -26,7 +26,18 @@ import RaspberryJam from "assets/SaucesImg/RaspberryJam.png";
 import style from "./styles.module.css";
 
 function ShoppingCart() {
-  const [store] = useContext(Store);
+  const [store, setStore] = useContext(Store);
+  console.log(store);
+
+  function deleteOrder(id){
+    setStore((pre) => ({
+      ...pre,
+      user: {
+        ...pre.user, 
+        shoppingCart: store.user.shoppingCart.filter(item => item.title !== id)
+      }
+    }))
+  }
 
   return (
     <div>
@@ -35,15 +46,16 @@ function ShoppingCart() {
       </div>
       <div className={style.mainTitle}>Корзина</div>
       <div className={style.wrapper}>
-        {!store.shoppingCart.length ? (
+        {!store.user.shoppingCart.length ? (
           <>Корзина пуста</>
         ) : (
-          store.shoppingCart.map((item) => (
+          store.user.shoppingCart.map((item) => (
             <OrderItem
               image={item.image}
               title={item.title}
               description={item.text}
               price={item.price}
+              onDelete={deleteOrder}
             />
           ))
         )}
