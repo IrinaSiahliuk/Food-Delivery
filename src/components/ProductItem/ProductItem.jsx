@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 import styles from "components/ProductItem/styles.module.css";
 
 import { ModalOrderForm } from "components";
+import { Store } from "app";
 
 function ProductItem(props) {
   const { image, title, text, price } = props;
+
+  const [store, setStore] = useContext(Store);
+
   const [isModal, setModal] = useState(false);
+
+  const onAddProduct = () => {
+    setStore((pre) => ({
+      ...pre,
+      user: { ...pre.user, shoppingCart: [...pre.user.shoppingCart, props] },
+    }));
+  };
 
   return (
     <>
@@ -38,6 +49,7 @@ function ProductItem(props) {
         title={title}
         description={text}
         onClose={() => setModal(false)}
+        onAddProduct={onAddProduct}
       />
     </>
   );

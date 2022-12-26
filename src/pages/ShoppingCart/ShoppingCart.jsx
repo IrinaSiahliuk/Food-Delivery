@@ -11,7 +11,6 @@ import {
   PromoCode,
   SumOrder,
   PagginationButtons,
-  ModalOrderForm,
 } from "components";
 import { Store } from "app";
 
@@ -29,14 +28,16 @@ function ShoppingCart() {
   const [store, setStore] = useContext(Store);
   console.log(store);
 
-  function deleteOrder(id){
+  function deleteOrder(id) {
     setStore((pre) => ({
       ...pre,
       user: {
-        ...pre.user, 
-        shoppingCart: store.user.shoppingCart.filter(item => item.title !== id)
-      }
-    }))
+        ...pre.user,
+        shoppingCart: store.user.shoppingCart.filter(
+          (item) => item.title !== id
+        ),
+      },
+    }));
   }
 
   return (
