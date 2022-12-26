@@ -9,25 +9,24 @@ import CustomInput from "components/RegForm/CustomInput";
 import styles from "./styles.module.css";
 import { Store } from "app";
 
-const onSubmit = async (values, actions) => {
-  console.log(actions);
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  setStore((pre) => ({
-    ...pre,
-    user: {
-      ...pre.user,
-      email: values.email,
-      phone: values.phoneNumber,
-      password: values.password
-    }
-  }));
-  console.log(store);
-  actions.resetForm();
-};
-
 const RegForm = () => {
   const [store, setStore] = useContext(Store);
   
+  const onSubmit = async (values, actions) => {
+    console.log(actions);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setStore((pre) => ({
+      ...pre,
+      user: {
+        ...pre.user,
+        email: values.email,
+        phone: values.phoneNumber,
+        password: values.password
+      }
+    }));
+    actions.resetForm();
+  };
+
   return (
     <Formik
       initialValues={{
