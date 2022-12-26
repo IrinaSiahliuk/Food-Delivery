@@ -107,12 +107,6 @@ function ShoppingCart() {
         <div className={style.pagginationWrapper}>
           <PagginationButtons />
         </div>
-
-        <ModalOrderForm
-          image={FourChease}
-          title="Четыре сыра"
-          description="25 см, традиционное тесто, 350 г"
-        />
       </div>
     </div>
   );
