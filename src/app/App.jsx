@@ -9,9 +9,13 @@ export const Store = createContext();
 
 function App() {
   const [store, setStore] = useState({
-    name: "Ira",
-    surname: "Ira2",
-    shoppingCart: [],
+    user: {
+      name: '',
+      email: '',
+      phone: '',
+      password: '',
+      shoppingCart: []
+    }
   });
 
   return (

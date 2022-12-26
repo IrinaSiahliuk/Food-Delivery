@@ -9,6 +9,7 @@ import {
   ShoppingCart,
   SignUp,
   Delivery,
+  PersonalAccount,
 } from "pages";
 import { ROUTES } from "shared/consts";
 
@@ -22,6 +23,7 @@ function Router() {
       <Route path={ROUTES.SHOPPING_CART} element={<ShoppingCart />} />
       <Route path={ROUTES.SIGN_UP} element={<SignUp />} />
       <Route path={ROUTES.DELIVERY} element={<Delivery />} />
+      <Route path={ROUTES.PERSONAL_ACCOUNT} element={<PersonalAccount />} />
     </Routes>
   );
 }
