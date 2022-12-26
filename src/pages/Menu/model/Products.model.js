@@ -38,7 +38,7 @@ class ProductsModel {
       ];
 
       this.loading = false;
-    }, 2000);
+    }, 40);
   }
 }
 
