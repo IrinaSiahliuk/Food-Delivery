@@ -104,7 +104,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 28px;
     background: #F3F3F7;
     border: 0;
@@ -112,7 +112,6 @@
 }
 
 .button {
-    width: 133px;
     height: 40px;
 
     background: #F3F3F7;
@@ -153,4 +152,9 @@
     line-height: 28px;
     color: #696F7A;
     cursor: pointer;
+}
+
+.btnWrapper{
+    display: flex;
+    gap: 15px;
 }
