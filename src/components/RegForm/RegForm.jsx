@@ -11,10 +11,16 @@ import { Store } from "app";
 
 const RegForm = () => {
   const [store, setStore] = useContext(Store);
+  let users = [];
+
+  // let localUsers = localStorage.getItem('users');
+  // if (localUsers.length > 0) {
+  //   users = JSON.parse(localUsers);
+  // }
   
   const onSubmit = async (values, actions) => {
     console.log(actions);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    //await new Promise((resolve) => setTimeout(resolve, 1000));
     setStore((pre) => ({
       ...pre,
       user: {
@@ -24,6 +30,9 @@ const RegForm = () => {
         password: values.password
       }
     }));
+    console.log(store);//не записывает сразу
+    users.push(store.user);
+    localStorage.setItem('users', JSON.stringify(users));
     actions.resetForm();
   };
 
