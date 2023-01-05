@@ -15,6 +15,7 @@
     background: #FFFFFF;
     border: 1.5px solid #E2E2E9;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .title {

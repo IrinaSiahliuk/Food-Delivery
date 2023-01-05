@@ -6,10 +6,9 @@ import { ModalOrderForm } from "components";
 import { Store } from "app";
 
 function ProductItem(props) {
+  
   const { image, title, text, price } = props;
-
   const [store, setStore] = useContext(Store);
-
   const [isModal, setModal] = useState(false);
 
   const onAddProduct = () => {
