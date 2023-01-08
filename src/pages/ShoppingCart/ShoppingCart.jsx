@@ -56,6 +56,7 @@ function ShoppingCart() {
               title={item.title}
               description={item.text}
               price={item.price}
+              count={item.count}
               onDelete={deleteOrder}
             />
           ))
@@ -89,7 +90,7 @@ function ShoppingCart() {
         <div className={style.secondaryTitle}>Соусы к бортикам и закускам</div>
         <div className={style.souces}>
           <SauceItem image={CheeseSauce} title="Сырный соус" price={0.6} />
-          <SauceItem image={BarbecueSauce} title="Бербукю" price={0.6} />
+          <SauceItem image={BarbecueSauce} title="Бербекю" price={0.6} />
           <SauceItem image={RanchSauce} title="Ранч" price={0.6} />
           <SauceItem image={RaspberryJam} title="Сгущенка" price={0.6} />
           <SauceItem

@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect, useState} from "react";
 
 import style from "components/ModalOrderForm/styles.module.css";
 
@@ -8,17 +8,44 @@ import { Store } from "app";
 import BarbecueSauce from "assets/SaucesImg/BarbecueSauce.png";
 import RanchSauce from "assets/SaucesImg/RanchSauce.png";
 import CheeseSauce from "assets/SaucesImg/CheeseSauce.png";
-import { useState } from "react";
 
 
-function ModalOrderForm({ image, title, description, isVisible = false, onClose, props }) {
+function ModalOrderForm({ image, title, text, price, isVisible = false, onClose }) {
     const [store, setStore] = useContext(Store);
+
+    let count = 0;
+    store.user.shoppingCart.forEach((item) => {
+        if(item.title === title){
+            count = item.count;
+        }
+    });
+
     const onAddProduct = () => {
-        setStore((pre) => ({
-          ...pre,
-          user: { ...pre.user, shoppingCart: [...pre.user.shoppingCart, props] },
-        }));
-      };
+        if(count === 0){
+            count += 1;
+            setStore((pre) => ({
+            ...pre,
+            user: { ...pre.user, shoppingCart: [...pre.user.shoppingCart, { image, title, text, price, count }] },
+            }));
+        }
+        else {
+            count += 1;
+            setStore((pre) => ({
+                ...pre,
+                user: { ...pre.user, shoppingCart: store.user.shoppingCart.map((item) => {
+                    if(item.title === title){
+                        return {
+                            ...item,
+                            count: count
+                        }
+                    }
+                    else {
+                        return item
+                    }
+                }) },
+            }));
+        }
+    };
 
         const[size, setSize] = useState("small");
         const[dough, setDough] = useState("traditional");  
@@ -32,7 +59,7 @@ function ModalOrderForm({ image, title, description, isVisible = false, onClose,
                 </div>
                 <div className={style.selectWrapper}>
                     <div className={style.title}>{title}</div>
-                    <div className={style.description}>{description}</div>
+                    <div className={style.description}>{text}</div>
                     <div className={style.sizeBtnsWrapper}>
                         <button 
                         className={style.sizeBtn}

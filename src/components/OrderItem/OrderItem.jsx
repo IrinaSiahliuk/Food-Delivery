@@ -7,9 +7,25 @@ import { GiEmptyMetalBucketHandle } from 'react-icons/gi';
 import style from "components/OrderItem/styles.module.css";
 import { Store } from "app";
 
-function OrderItem({ image, title, description, price, onDelete}){
+function OrderItem({ image, title, description, price, count, onDelete}){
     const [store, setStore] = useContext(Store);
-    const [counter, setCounter] = useState (1);
+
+    function changeCount() {
+        setStore((pre) => ({
+            ...pre,
+            user: { ...pre.user, shoppingCart: store.user.shoppingCart.map((item) => {
+                if(item.title === title){
+                    return {
+                        ...item,
+                        count: count
+                    }
+                }
+                else {
+                    return item
+                }
+            })},
+        }));
+    }
 
     return(
         <div className={style.wrapper}>
@@ -23,15 +39,19 @@ function OrderItem({ image, title, description, price, onDelete}){
                 </div>
             </div>
             <div className={style.order}>
-                <div className={style.price}>{price*counter} BYN</div>
+                <div className={style.price}>{price*count} BYN</div>
                 <div className={style.buttons}>
                     <button onClick={()=>{
-                        if(counter>0){
-                            setCounter(counter-1)
+                        if(count>0){
+                            count -= 1;
+                            changeCount();
                         }
                     }} className={style.button}><AiOutlineMinus/></button>
-                    <div className={style.counter}>{counter}</div>
-                    <button onClick={()=>setCounter(counter+1)} className={style.button}><AiOutlinePlus/></button>
+                    <div className={style.counter}>{count}</div>
+                    <button onClick={()=>{
+                        count += 1;
+                        changeCount();
+                    }} className={style.button}><AiOutlinePlus/></button>
                 </div>
                 <div onClick={() => onDelete(title)} className={style.icon}><GiEmptyMetalBucketHandle/></div>
             </div>

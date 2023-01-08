@@ -8,6 +8,11 @@ import { Store } from "app";
 function Nav() {
   const [store] = useContext(Store);
 
+  let basketCount = 0;
+  store.user.shoppingCart.forEach((item) => {
+    basketCount += item.count;
+  });
+
   return (
     <div className={styles.navWrapper}>
       <ul className={styles.navList}>
@@ -45,7 +50,7 @@ function Nav() {
         </Link>
         <Link to={ROUTES.SHOPPING_CART}>
           <button className={styles.basketBtn}>
-            Корзина | {store.user.shoppingCart.length}
+            Корзина | {basketCount}
           </button>
         </Link>
       </div>
