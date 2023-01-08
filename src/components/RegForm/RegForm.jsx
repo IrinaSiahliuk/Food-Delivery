@@ -11,7 +11,7 @@ import { Store } from "app";
 
 const RegForm = () => {
   const [store, setStore] = useContext(Store);
-  let users = [];
+  //let users = [];
 
   // let localUsers = localStorage.getItem('users');
   // if (localUsers.length > 0) {
@@ -30,9 +30,8 @@ const RegForm = () => {
         password: values.password
       }
     }));
-    console.log(store);//не записывает сразу
-    users.push(store.user);
-    localStorage.setItem('users', JSON.stringify(users));
+    // users.push(store.user);
+    // localStorage.setItem('users', JSON.stringify(users));
     actions.resetForm();
   };
 
